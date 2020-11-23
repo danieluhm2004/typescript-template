@@ -1,1 +1,1 @@
-# kakao-qr
+# TypeScript Template
