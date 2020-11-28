@@ -10,7 +10,7 @@
     "start:prod": "cross-env NODE_ENV=production node .",
     "start:dev": "cross-env NODE_ENV=development node .",
     "start:stage": "cross-env NODE_ENV=stage node .",
-    "serve": "yarn clean && cross-env NODE_ENV=production tsc-watch --onSuccess \"node .\"",
+    "serve": "yarn clean && cross-env NODE_ENV=development tsc-watch --onSuccess \"node .\"",
     "serve:prod": "yarn clean && cross-env NODE_ENV=production tsc-watch --onSuccess \"node .\"",
     "serve:stage": "yarn clean && cross-env NODE_ENV=staging tsc-watch --onSuccess \"node .\"",
     "lint": "eslint .",
@@ -24,7 +24,11 @@
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "@types/eslint": "^7.2.5",
+    "@types/eslint-plugin-prettier": "^3.1.0",
     "@types/node": "^14.14.9",
+    "@types/prettier": "^2.1.5",
+    "@types/tsc-watch": "4.2.0",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.14.0",
