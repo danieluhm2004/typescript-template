@@ -1,2 +1,3 @@
-import dotenv from 'dotenv';
-if (process.env.NODE_ENV === 'dev') dotenv.config();
+async function main() {}
+
+main();
